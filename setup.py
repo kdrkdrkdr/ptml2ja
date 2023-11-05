@@ -11,6 +11,8 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/kdrkdrkdr/ptml2ja",
     packages=setuptools.find_packages(),
+    package_data={'': ['*.txt', '*.csv']},
+    include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
@@ -21,6 +23,8 @@ setuptools.setup(
         "Operating System :: OS Independent"
     ],
     install_requires=[
+        'unidecode',
+        'pycountry',
         'jamo',
         'cmake',
         'jaconv',
