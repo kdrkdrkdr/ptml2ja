@@ -72,7 +72,7 @@ print(ipa)
 |Czech|CS|
 |Finnish|FI|
 |Latin|LA|
-
+|Hungarian|HU|
 
 ---
 ## References
