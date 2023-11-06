@@ -7,7 +7,7 @@ The project mainly focuses on developing an IPA cleaner that uses only Japanese 
 
 ---
 ## Installation
-**Install with github project**
+**Install with github project (Recommended)**
 ```sh
 pip install git+https://github.com/kdrkdrkdr/ptml2ja
 ```
