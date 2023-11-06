@@ -24,11 +24,13 @@ lang_code_lst = {
     'CS', # 체코어
     'FI', # 핀란드어
     'LA', # 라틴어
+    'HU', # 헝가리어
 }
 
 
 
 def to_korean(text:str, lang_code:str):
+    lang_code = lang_code.upper()
     text = text+' '
     if lang_code in ('KO', 'JA'):
         return text
@@ -37,6 +39,7 @@ def to_korean(text:str, lang_code:str):
 
 
 def to_japanese(text, lang_code):
+    lang_code = lang_code.upper()
     if lang_code == 'JA':
         return text
     if lang_code != 'KO':
@@ -47,6 +50,7 @@ def to_japanese(text, lang_code):
 
 def ml2ja_ipa(text):
     for lc in lang_code_lst:
+        lc = lc.upper()
         if lc != 'JA':
             text = re.sub(
                 rf'\[{lc}\](.*?)\[{lc}\]', 
