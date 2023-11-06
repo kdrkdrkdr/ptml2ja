@@ -56,7 +56,7 @@ def ml2ja_ipa(text):
                 rf'\[{lc}\](.*?)\[{lc}\]', 
                 lambda x: japanese_cleaners(to_japanese(x.group(1), lc)).replace(' ', '')+' ', 
                 text
-            ).replace('↓', '').replace('↑', '')
+            ).replace('↓', '').replace('↑', '').replace('QQ', 'Q')
 
         else:
             text = re.sub(
