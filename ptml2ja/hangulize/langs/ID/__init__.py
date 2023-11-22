@@ -3,7 +3,7 @@ from ....hangulize import *
 from ....ko2kana.korean import join_jamos, split_syllables
 
 _repl1 = {
-    # 'kh': 'ㅋ',
+    'kh': 'ㅋ',
     'ng': 'ㅇ',
     'gh': 'ㄱ',
     'b': 'ㅂ',
@@ -39,8 +39,6 @@ _repl1 = {
 
 _repl2 = {
     # ㅑㅣㅠㅖㅛㅏㅔㅣㅗㅜ
-    'ㅃ': 'ㅂ',
-    'ㅉ': 'ㅈ',
     'ㅑ': '야',
     'ㅣ': '이',
     'ㅠ': '유',
